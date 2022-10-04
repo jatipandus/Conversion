@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Conversion</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   <!--[if lt IE 9]>
+   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->   
+   <script src="js/conversion.js"></script>
+</head>
+<body>
+
+<div class="container">
+   <div class="row">
+      <div class="col-75">
+        <select id="temperature1" name="temperature1">
+          <option value="1" selected>Celcius</option>
+          <option value="2">Fahrenheit</option>
+          <option value="3">Kevin</option>
+          <option value="4">Reamur</option>
+        </select>
+      </div>
+      <div class="col-75">
+        <select id="temperature2" name="temperature2">
+          <option value="1">Celcius</option>
+          <option value="2" selected>Fahrenheit</option>
+          <option value="3">Kevin</option>
+          <option value="4">Reamur</option>
+        </select>
+      </div>
+   </div>
+   
+   <div class="row">
+      
+   </div>
+
+   <div class="row">
+      <div class="col-75">
+        <input type="text" id="inputTemperature1" name="temperature1" onchange="myFunction()">
+      </div>
+      <i class="fas fa-equals"></i>
+      <div class="col-75">
+        <input type="text" id="inputTemperature2" name="temperature2"  onchange="myFunction()">
+      </div>
+   </div>
+</div>
+
+</body>
+</html>
+
+
