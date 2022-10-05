@@ -11,4 +11,24 @@ function myFunction(){
         var tempkelvin = parseInt(tempcelcius) + 273.15;
         document.getElementById("inputTemperature2").value = tempkelvin;
     }
+
+    if(document.getElementById("temperature1").value === '1' && document.getElementById("temperature2").value === '4'){
+        var tempcelcius = document.getElementById("inputTemperature1").value;
+        var tempreamur = 4/5 * parseInt(tempcelcius);
+        document.getElementById("inputTemperature2").value = tempreamur;
+    }
+    
+    if(document.getElementById("temperature1").value === '2' && document.getElementById("temperature2").value === '1'){
+        var tempfahrenheit = document.getElementById("inputTemperature1").value;
+        var tempcelcius = 5/9 * (parseInt(tempfahrenheit) - 32);
+        document.getElementById("inputTemperature2").value = tempcelcius;
+    }
+    
+    if(document.getElementById("temperature1").value === '2' && document.getElementById("temperature2").value === '3'){
+        var tempfahrenheit = document.getElementById("inputTemperature1").value;
+        var tempkelvin = 5/9 * (parseInt(tempfahrenheit) - 32) + 273;
+        document.getElementById("inputTemperature2").value = tempkelvin;
+    }
+    
+
 }
