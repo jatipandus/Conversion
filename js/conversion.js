@@ -30,5 +30,28 @@ function myFunction(){
         document.getElementById("inputTemperature2").value = tempkelvin;
     }
     
+    if(document.getElementById("temperature1").value === '2' && document.getElementById("temperature2").value === '4'){
+        var tempfahrenheit = document.getElementById("inputTemperature1").value;
+        var tempreamur = 4/9 * (parseInt(tempfahrenheit) - 32);
+        document.getElementById("inputTemperature2").value = tempreamur;
+    }
+    
+    if(document.getElementById("temperature1").value === '3' && document.getElementById("temperature2").value === '1'){
+        var tempcelcius = document.getElementById("inputTemperature1").value;
+        var tempkelvin = 273 + parseInt(tempcelcius);
+        document.getElementById("inputTemperature2").value = tempkelvin;
+    }
+
+    if(document.getElementById("temperature1").value === '3' && document.getElementById("temperature2").value === '2'){
+        var tempkelvin = document.getElementById("inputTemperature1").value;
+        var tempfahrenheit = 9/5 * (parseInt(tempkelvin) - 273) + 32;
+        document.getElementById("inputTemperature2").value = tempfahrenheit;
+    }
+
+    if(document.getElementById("temperature1").value === '3' && document.getElementById("temperature2").value === '4'){
+        var tempkelvin = document.getElementById("inputTemperature1").value;
+        var tempreamur = 4/5 * (parseInt(tempkelvin) - 273);
+        document.getElementById("inputTemperature2").value = tempreamur;
+    }
 
 }
