@@ -74,18 +74,22 @@ function myFunction(){
 
     if(document.getElementById("temperature1").value === '1' && document.getElementById("temperature2").value === '1'){
         document.getElementById("inputTemperature1").value = document.getElementById("inputTemperature2").value;        
+        document.getElementById("inputTemperature2").value = document.getElementById("inputTemperature1").value;        
     }
 
     if(document.getElementById("temperature1").value === '2' && document.getElementById("temperature2").value === '2'){
         document.getElementById("inputTemperature1").value = document.getElementById("inputTemperature2").value;        
+        document.getElementById("inputTemperature2").value = document.getElementById("inputTemperature1").value;        
     }
 
     if(document.getElementById("temperature1").value === '3' && document.getElementById("temperature2").value === '3'){
         document.getElementById("inputTemperature1").value = document.getElementById("inputTemperature2").value;        
+        document.getElementById("inputTemperature2").value = document.getElementById("inputTemperature1").value;        
     }
     
     if(document.getElementById("temperature1").value === '4' && document.getElementById("temperature2").value === '4'){
         document.getElementById("inputTemperature1").value = document.getElementById("inputTemperature2").value;        
+        document.getElementById("inputTemperature2").value = document.getElementById("inputTemperature1").value;        
     }
 
 }
