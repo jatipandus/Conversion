@@ -148,6 +148,24 @@ function myFunctionLength(){
         var MM = parseInt(CM) * 10;
         document.getElementById("inputlength2").value = MM;
     }
+
+    if(document.getElementById("length1").value === '4' && document.getElementById("length2").value === '1'){
+        var MM = document.getElementById("inputlength1").value;
+        var KM = parseInt(MM) / 1000000;
+        document.getElementById("inputlength2").value = KM;
+    }
+
+    if(document.getElementById("length1").value === '4' && document.getElementById("length2").value === '2'){
+        var MM = document.getElementById("inputlength1").value;
+        var M = parseInt(MM) / 1000;
+        document.getElementById("inputlength2").value = M;
+    }
+
+    if(document.getElementById("length1").value === '4' && document.getElementById("length2").value === '3'){
+        var MM = document.getElementById("inputlength1").value;
+        var CM = parseInt(MM) / 10;
+        document.getElementById("inputlength2").value = CM;
+    }
 }
 
 
