@@ -93,3 +93,25 @@ function myFunction(){
     }
 
 }
+
+function myFunctionLength(){
+    if(document.getElementById("length1").value === '1' && document.getElementById("length2").value === '2'){
+        var KM = document.getElementById("inputlength1").value;
+        var M = 1000 * parseInt(KM);
+        document.getElementById("inputlength2").value = M;
+    }
+
+    if(document.getElementById("length1").value === '1' && document.getElementById("length2").value === '3'){
+        var KM = document.getElementById("inputlength1").value;
+        var CM = 100000 * parseInt(KM);
+        document.getElementById("inputlength2").value = CM;
+    }
+
+    if(document.getElementById("length1").value === '1' && document.getElementById("length2").value === '4'){
+        var KM = document.getElementById("inputlength1").value;
+        var MM = 1000000 * parseInt(KM);
+        document.getElementById("inputlength2").value = MM;
+    }
+}
+
+
