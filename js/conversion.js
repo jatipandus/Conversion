@@ -112,6 +112,42 @@ function myFunctionLength(){
         var MM = 1000000 * parseInt(KM);
         document.getElementById("inputlength2").value = MM;
     }
+    
+    if(document.getElementById("length1").value === '2' && document.getElementById("length2").value === '1'){
+        var M = document.getElementById("inputlength1").value;
+        var KM = parseInt(M) / 1000;
+        document.getElementById("inputlength2").value = KM;
+    }
+    
+    if(document.getElementById("length1").value === '2' && document.getElementById("length2").value === '3'){
+        var M = document.getElementById("inputlength1").value;
+        var CM = parseInt(M) * 100;
+        document.getElementById("inputlength2").value = CM;
+    }
+    
+    if(document.getElementById("length1").value === '2' && document.getElementById("length2").value === '4'){
+        var M = document.getElementById("inputlength1").value;
+        var MM = parseInt(M) * 1000;
+        document.getElementById("inputlength2").value = MM;
+    }
+    
+    if(document.getElementById("length1").value === '3' && document.getElementById("length2").value === '1'){
+        var CM = document.getElementById("inputlength1").value;
+        var KM = parseInt(CM) / 100000;
+        document.getElementById("inputlength2").value = KM;
+    }
+
+    if(document.getElementById("length1").value === '3' && document.getElementById("length2").value === '2'){
+        var CM = document.getElementById("inputlength1").value;
+        var M = parseInt(CM) / 100;
+        document.getElementById("inputlength2").value = M;
+    }
+
+    if(document.getElementById("length1").value === '3' && document.getElementById("length2").value === '4'){
+        var CM = document.getElementById("inputlength1").value;
+        var MM = parseInt(CM) * 10;
+        document.getElementById("inputlength2").value = MM;
+    }
 }
 
 
