@@ -166,6 +166,26 @@ function myFunctionLength(){
         var CM = parseInt(MM) / 10;
         document.getElementById("inputlength2").value = CM;
     }
+
+    if(document.getElementById("length1").value === '1' && document.getElementById("length2").value === '1'){
+        document.getElementById("inputlength1").value = document.getElementById("inputlength2").value;
+        document.getElementById("inputlength2").value = document.getElementById("inputlength1").value;
+    }
+
+    if(document.getElementById("length1").value === '2' && document.getElementById("length2").value === '2'){
+        document.getElementById("inputlength1").value = document.getElementById("inputlength2").value;
+        document.getElementById("inputlength2").value = document.getElementById("inputlength1").value;
+    }
+
+    if(document.getElementById("length1").value === '3' && document.getElementById("length2").value === '3'){
+        document.getElementById("inputlength1").value = document.getElementById("inputlength2").value;
+        document.getElementById("inputlength2").value = document.getElementById("inputlength1").value;
+    }
+
+    if(document.getElementById("length1").value === '4' && document.getElementById("length2").value === '4'){
+        document.getElementById("inputlength1").value = document.getElementById("inputlength2").value;
+        document.getElementById("inputlength2").value = document.getElementById("inputlength1").value;
+    }
 }
 
 
