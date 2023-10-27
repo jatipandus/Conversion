@@ -181,5 +181,15 @@ function length(){
         var lengthKM = (parseInt(lengthMi) * (1.609));
         document.getElementById("inputLength2").value = lengthKM;
     }
+    if(document.getElementById("length1").value === '2' && document.getElementById("length2").value === '5'){
+        var lengthM = document.getElementById("inputLength1").value;
+        var lengthMi = (parseInt(lengthM) * (1609));
+        document.getElementById("inputLength2").value = lengthMi;
+    }
+    if(document.getElementById("length1").value === '5' && document.getElementById("length2").value === '2'){
+        var lengthMi = document.getElementById("inputLength1").value;
+        var lengthM = (parseInt(lengthMi) / (1.609));
+        document.getElementById("inputLength2").value = lengthM;
+    }
 
 }
