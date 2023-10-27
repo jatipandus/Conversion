@@ -183,13 +183,33 @@ function length(){
     }
     if(document.getElementById("length1").value === '2' && document.getElementById("length2").value === '5'){
         var lengthM = document.getElementById("inputLength1").value;
-        var lengthMi = (parseInt(lengthM) * (1609));
+        var lengthMi = (parseInt(lengthM) / (1609));
         document.getElementById("inputLength2").value = lengthMi;
     }
     if(document.getElementById("length1").value === '5' && document.getElementById("length2").value === '2'){
         var lengthMi = document.getElementById("inputLength1").value;
-        var lengthM = (parseInt(lengthMi) / (1.609));
+        var lengthM = (parseInt(lengthMi) * (1609));
         document.getElementById("inputLength2").value = lengthM;
+    }
+    if(document.getElementById("length1").value === '3' && document.getElementById("length2").value === '5'){
+        var lengthCM = document.getElementById("inputLength1").value;
+        var lengthMi = (parseInt(lengthCM) / (160900));
+        document.getElementById("inputLength2").value = lengthMi;
+    }
+    if(document.getElementById("length1").value === '5' && document.getElementById("length2").value === '3'){
+        var lengthMi = document.getElementById("inputLength1").value;
+        var lengthCM = (parseInt(lengthMi) * (160900));
+        document.getElementById("inputLength2").value = lengthCM;
+    }
+    if(document.getElementById("length1").value === '4' && document.getElementById("length2").value === '5'){
+        var lengthI = document.getElementById("inputLength1").value;
+        var lengthMi = (parseInt(lengthI) / (63360));
+        document.getElementById("inputLength2").value = lengthMi;
+    }
+    if(document.getElementById("length1").value === '5' && document.getElementById("length2").value === '4'){
+        var lengthMi = document.getElementById("inputLength1").value;
+        var lengthI = (parseInt(lengthMi) * (63360));
+        document.getElementById("inputLength2").value = lengthI;
     }
 
 }
