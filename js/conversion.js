@@ -93,3 +93,11 @@ function myFunction(){
     }
 
 }
+
+function length(){
+    if(document.getElementById("length1").value === '1' && document.getElementById("length2").value === '2'){
+        var lengthKM = document.getElementById("inputLength1").value;
+        var lengthM = (parseInt(lengthKM) * (1000));
+        document.getElementById("inputLength2").value = lengthM;
+    }
+}
