@@ -211,5 +211,9 @@ function length(){
         var lengthI = (parseInt(lengthMi) * (63360));
         document.getElementById("inputLength2").value = lengthI;
     }
+    if(document.getElementById("length1").value === '5' && document.getElementById("length2").value === '5'){
+        var lengthMi = document.getElementById("inputLength1").value;
+        document.getElementById("inputLength2").value = lengthMi;
+    }
 
 }
