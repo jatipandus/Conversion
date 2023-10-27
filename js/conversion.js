@@ -113,4 +113,29 @@ function length(){
         var lengthM = document.getElementById("inputLength1").value;
         document.getElementById("inputLength2").value = lengthM;
     }
+    if(document.getElementById("length1").value === '1' && document.getElementById("length2").value === '3'){
+        var lengthKM = document.getElementById("inputLength1").value;
+        var lengthCM = (parseInt(lengthKM) * (100000));
+        document.getElementById("inputLength2").value = lengthCM;
+    }
+    if(document.getElementById("length1").value === '3' && document.getElementById("length2").value === '1'){
+        var lengthCM = document.getElementById("inputLength1").value;
+        var lengthKM = (parseInt(lengthCM) / (100000));
+        document.getElementById("inputLength2").value = lengthKM;
+    }
+    if(document.getElementById("length1").value === '2' && document.getElementById("length2").value === '3'){
+        var lengthM = document.getElementById("inputLength1").value;
+        var lengthCM = (parseInt(lengthM) * (100));
+        document.getElementById("inputLength2").value = lengthCM;
+    }
+    if(document.getElementById("length1").value === '3' && document.getElementById("length2").value === '2'){
+        var lengthCM = document.getElementById("inputLength1").value;
+        var lengthM = (parseInt(lengthCM) / (100));
+        document.getElementById("inputLength2").value = lengthM;
+    }
+    if(document.getElementById("length1").value === '3' && document.getElementById("length2").value === '3'){
+        var lengthCM = document.getElementById("inputLength1").value;
+        document.getElementById("inputLength2").value = lengthCM;
+    }
+
 }
