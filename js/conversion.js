@@ -171,5 +171,15 @@ function length(){
         var lengthI = document.getElementById("inputLength1").value;
         document.getElementById("inputLength2").value = lengthI;
     }
+    if(document.getElementById("length1").value === '1' && document.getElementById("length2").value === '5'){
+        var lengthKM = document.getElementById("inputLength1").value;
+        var lengthMi = (parseInt(lengthKM) / (1.609));
+        document.getElementById("inputLength2").value = lengthMi;
+    }
+    if(document.getElementById("length1").value === '5' && document.getElementById("length2").value === '1'){
+        var lengthMi = document.getElementById("inputLength1").value;
+        var lengthKM = (parseInt(lengthMi) * (1.609));
+        document.getElementById("inputLength2").value = lengthKM;
+    }
 
 }
