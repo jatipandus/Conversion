@@ -100,4 +100,17 @@ function length(){
         var lengthM = (parseInt(lengthKM) * (1000));
         document.getElementById("inputLength2").value = lengthM;
     }
+    if(document.getElementById("length1").value === '2' && document.getElementById("length2").value === '1'){
+        var lengthM = document.getElementById("inputLength1").value;
+        var lengthKM = (parseInt(lengthM) / (1000));
+        document.getElementById("inputLength2").value = lengthKM;
+    }
+    if(document.getElementById("length1").value === '1' && document.getElementById("length2").value === '1'){
+        var lengthM = document.getElementById("inputLength1").value;
+        document.getElementById("inputLength2").value = lengthM;
+    }
+    if(document.getElementById("length1").value === '2' && document.getElementById("length2").value === '2'){
+        var lengthM = document.getElementById("inputLength1").value;
+        document.getElementById("inputLength2").value = lengthM;
+    }
 }
