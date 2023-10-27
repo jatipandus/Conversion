@@ -137,5 +137,39 @@ function length(){
         var lengthCM = document.getElementById("inputLength1").value;
         document.getElementById("inputLength2").value = lengthCM;
     }
+    if(document.getElementById("length1").value === '1' && document.getElementById("length2").value === '4'){
+        var lengthKM = document.getElementById("inputLength1").value;
+        var lengthI = (parseInt(lengthKM) * (39370));
+        document.getElementById("inputLength2").value = lengthI;
+    }
+    if(document.getElementById("length1").value === '4' && document.getElementById("length2").value === '1'){
+        var lengthM = document.getElementById("inputLength1").value;
+        var lengthI = (parseInt(lengthM) / (39370));
+        document.getElementById("inputLength2").value = lengthI;
+    }
+    if(document.getElementById("length1").value === '2' && document.getElementById("length2").value === '4'){
+        var lengthM = document.getElementById("inputLength1").value;
+        var lengthI = (parseInt(lengthM) * (39.37));
+        document.getElementById("inputLength2").value = lengthI;
+    }
+    if(document.getElementById("length1").value === '4' && document.getElementById("length2").value === '2'){
+        var lengthM = document.getElementById("inputLength1").value;
+        var lengthI = (parseInt(lengthM) / (39.37));
+        document.getElementById("inputLength2").value = lengthI;
+    }
+    if(document.getElementById("length1").value === '4' && document.getElementById("length2").value === '3'){
+        var lengthCM = document.getElementById("inputLength1").value;
+        var lengthI = (parseInt(lengthCM) / (2.54));
+        document.getElementById("inputLength2").value = lengthI;
+    }
+    if(document.getElementById("length1").value === '3' && document.getElementById("length2").value === '4'){
+        var lengthCM = document.getElementById("inputLength1").value;
+        var lengthI = (parseInt(lengthCM) * (2.54));
+        document.getElementById("inputLength2").value = lengthI;
+    }
+    if(document.getElementById("length1").value === '4' && document.getElementById("length2").value === '4'){
+        var lengthI = document.getElementById("inputLength1").value;
+        document.getElementById("inputLength2").value = lengthI;
+    }
 
 }
