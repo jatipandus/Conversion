@@ -156,4 +156,9 @@ function Mass(){
         var massPound = (parseInt(massKilogram) * (2.205));
         document.getElementById("inputMass2").value = massPound;
     }
+    if(document.getElementById("mass1").value === '3' && document.getElementById("mass2").value === '1'){
+        var massPound = document.getElementById("inputMass1").value;
+        var massKilogram = (parseInt(massPound) / (2.205));
+        document.getElementById("inputMass2").value = massKilogram;
+    }
 }
