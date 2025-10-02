@@ -262,4 +262,10 @@ function Mass(){
         var massKilogram = (parseInt(massTonne) * (1000));
         document.getElementById("inputMass2").value = massKilogram;
     }
+    
+    if(document.getElementById("mass1").value === '2' && document.getElementById("mass2").value === '4'){
+        var massGram = document.getElementById("inputMass1").value;
+        var massTonne = (parseInt(massGram) / (1000000));
+        document.getElementById("inputMass2").value = massTonne;
+    }
 }
