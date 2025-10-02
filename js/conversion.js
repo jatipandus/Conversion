@@ -273,4 +273,10 @@ function Mass(){
         var massGram = (parseInt(massTonne) * (1000000));
         document.getElementById("inputMass2").value = massGram;
     }
+
+    if(document.getElementById("mass1").value === '3' && document.getElementById("mass2").value === '4'){
+        var massPound = document.getElementById("inputMass1").value;
+        var massTonne = (parseInt(massPound) / (2205));
+        document.getElementById("inputMass2").value = massTonne;
+    }
 }
