@@ -224,4 +224,9 @@ function Mass(){
         var massGram = (parseInt(massKilogram) * (1000));
         document.getElementById("inputMass2").value = massGram;
     }
+    if(document.getElementById("mass1").value === '2' && document.getElementById("mass2").value === '1'){
+        var massGram = document.getElementById("inputMass1").value;
+        var massKilogram = (parseInt(massGram) / (1000));
+        document.getElementById("inputMass2").value = massKilogram;
+    }
 }
