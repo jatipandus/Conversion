@@ -268,4 +268,9 @@ function Mass(){
         var massTonne = (parseInt(massGram) / (1000000));
         document.getElementById("inputMass2").value = massTonne;
     }
+    if(document.getElementById("mass1").value === '4' && document.getElementById("mass2").value === '2'){
+        var massTonne = document.getElementById("inputMass1").value;
+        var massGram = (parseInt(massTonne) * (1000000));
+        document.getElementById("inputMass2").value = massGram;
+    }
 }
