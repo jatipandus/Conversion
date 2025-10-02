@@ -246,4 +246,9 @@ function Mass(){
         var massPound = (parseInt(massGram) / (453.6));
         document.getElementById("inputMass2").value = massPound;
     }
+    if(document.getElementById("mass1").value === '3' && document.getElementById("mass2").value === '2'){
+        var massPound = document.getElementById("inputMass1").value;
+        var massGram = (parseInt(massPound) * (453.6));
+        document.getElementById("inputMass2").value = massGram;
+    }
 }
