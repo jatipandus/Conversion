@@ -139,3 +139,11 @@ function length(){
     }
 
 }
+
+function Mass(){
+    if(document.getElementById("mass1").value === '1' && document.getElementById("mass2").value === '2'){
+        var massKilogram = document.getElementById("inputMass1").value;
+        var massGram = (parseInt(massKilogram) * (1000));
+        document.getElementById("inputMass2").value = massGram;
+    }
+}
