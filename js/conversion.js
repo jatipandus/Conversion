@@ -151,6 +151,7 @@ function Mass(){
         var massKilogram = (parseInt(massGram) / (1000));
         document.getElementById("inputMass2").value = massKilogram;
     }
+
     if(document.getElementById("mass1").value === '1' && document.getElementById("mass2").value === '3'){
         var massKilogram = document.getElementById("inputMass1").value;
         var massPound = (parseInt(massKilogram) * (2.205));
@@ -160,5 +161,11 @@ function Mass(){
         var massPound = document.getElementById("inputMass1").value;
         var massKilogram = (parseInt(massPound) / (2.205));
         document.getElementById("inputMass2").value = massKilogram;
+    }
+    
+    if(document.getElementById("mass1").value === '2' && document.getElementById("mass2").value === '3'){
+        var massGram = document.getElementById("inputMass1").value;
+        var massPound = (parseInt(massGram) / (453.6));
+        document.getElementById("inputMass2").value = massPound;
     }
 }
